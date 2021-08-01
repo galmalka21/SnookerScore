@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#3E3B3B">
+
+
+    <ImageButton
+        android:id="@+id/backarrow"
+        android:layout_width="128px"
+        android:layout_height="128px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/backarrow"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        ></ImageButton>
+
+    <ImageButton
+        android:id="@+id/diceimage"
+        android:layout_width="128px"
+        android:layout_height="128px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/dice"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        ></ImageButton>
+
+    <TextView
+        android:id="@+id/player_1_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="30dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/player_1_gb_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- 0"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="30dp"
+        android:layout_toRightOf="@id/player_1_name"
+        android:layout_marginLeft="10dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/player_1_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/score_tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score:"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="90dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/fouls_tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fouls:"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/player_1_score"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="90dp"
+        ></TextView>
+
+    <CheckBox
+        android:id="@+id/player_1_cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/player_1_score"
+        android:layout_marginLeft="20dp"
+        android:onClick="Player_1_CB"
+        android:text="P1"
+        ></CheckBox>
+
+    <TextView
+        android:id="@+id/fouls_score_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 "
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/player_1_score"
+        android:layout_marginTop="15dp"
+        ></TextView>
+
+
+    <TextView
+        android:id="@+id/fouls_tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fouls:"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/player_2_score"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="90dp"
+        ></TextView>
+
+    <CheckBox
+        android:id="@+id/player_2_cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/player_2_score"
+        android:layout_marginLeft="20dp"
+        android:onClick="Player_2_CB"
+        android:text="P2"
+        ></CheckBox>
+
+    <TextView
+        android:id="@+id/fouls_score_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/player_2_score"
+        android:layout_marginTop="15dp"
+        ></TextView>
+
+
+    <Button
+        android:id="@+id/player_1_reset_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/roundbutton"
+        ></Button>
+
+    <Button
+        android:id="@+id/player_1_foul_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foul"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/roundbutton"
+        ></Button>
+
+    <ImageButton
+        android:id="@+id/player_1_1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="300dp"
+        android:textColor="#FF0000"
+        android:background="@drawable/redball"
+
+        ></ImageButton>
+
+    <ImageButton
+        android:id="@+id/player_1_2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="55dp"
+        android:textColor="#FFFF00"
+        android:background="@drawable/yellowball"
+
+        ></ImageButton>
+
+    <ImageButton
+        android:id="@+id/player_1_3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="110dp"
+        android:textColor="#00FF00"
+        android:background="@drawable/greenball"
+
+        ></ImageButton>
+
+    <ImageButton
+        android:id="@+id/player_1_4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+4"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="165dp"
+        android:textColor="#504635"
+        android:background="@drawable/brownball"
+
+        ></ImageButton>
+
+    <ImageButton
+        android:id="@+id/player_1_5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="220dp"
+        android:textColor="#0049FF"
+        android:background="@drawable/blueball"
+        ></ImageButton>
+
+    <ImageButton
+        android:id="@+id/player_1_6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+6"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="275dp"
+        android:textColor="#FF00A1"
+        android:background="@drawable/pinkball"
+        ></ImageButton>
+
+    <ImageButton
+        android:id="@+id/player_1_7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+7"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="330dp"
+        android:textColor="#000000"
+        android:background="@drawable/blackkball"
+        ></ImageButton>
+
+// Player 2
+
+    <TextView
+        android:id="@+id/player_2_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:textSize="30dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/player_2_gb_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- 0"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:textSize="30dp"
+        android:layout_toRightOf="@id/player_2_name"
+        android:layout_marginLeft="10dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/player_2_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="460dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/score_tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score:"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="460dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="90dp"
+        ></TextView>
+
+    <Button
+        android:id="@+id/player_2_reset_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="570dp"
+        android:background="@drawable/roundbutton"
+        ></Button>
+
+    <Button
+        android:id="@+id/player_2_foul_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foul"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="570dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/roundbutton"
+        ></Button>
+
+    <Button
+        android:id="@+id/endgame_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Game"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/roundbutton"
+        ></Button>
+
+
+
+
+</RelativeLayout>

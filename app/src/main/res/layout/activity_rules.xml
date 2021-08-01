@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3E3B3B"
+    tools:context=".RulesActivity">
+
+    <ImageButton
+        android:id="@+id/backarrow"
+        android:layout_width="128px"
+        android:layout_height="128px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/backarrow"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        ></ImageButton>
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help Section"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:textSize="35dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/table_arrangement_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ball arrangement"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:textSize="30dp"
+        ></TextView>
+
+    <ImageView
+        android:id="@+id/table_arrangement"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:background="@drawable/tablearragment"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="180dp"
+        ></ImageView>
+
+    <TextView
+        android:id="@+id/rules_1"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:text="1. Color Value:\n Red = 1 , Yellow = 2 , Green = 3, Brown = 4 ,\n Blue = 5 , Pink = 6 , Black = 7"
+        android:layout_alignParentLeft="true"
+        android:textSize="20dp"
+        android:layout_below="@+id/table_arrangement"
+        android:layout_marginTop="20dp"
+        ></TextView>
+
+<!--    <TextView-->
+<!--        android:id="@+id/rules_2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_below="@id/rules_1"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="2. Test"-->
+<!--        android:textSize="20dp"-->
+<!--        ></TextView>-->
+
+</RelativeLayout>
